@@ -98,7 +98,7 @@ $\hat{L}^{2}$
 	\hat{L_{-}} & = \hat{L_{x}} - i \hat{L_{y}}
 	\end{aligned}
 \end{equation}
-مثلا مؤثري المتذبذ التوافقي، فإن $ \hat{L_{+}} $ و $\hat{L_{-}}$ ليس هرميتيان و تحققان علاقة التبديل التالية :
+مثلا مؤثري المتذبذب التوافقي، فإن $ \hat{L_{+}} $ و $\hat{L_{-}}$ ليس هرميتيان و تحققان علاقة التبديل التالية :
 \begin{equation}
 	\label{eqn:3-11}
 	\begin{aligned}
@@ -112,6 +112,710 @@ $\hat{L}^{2}$
 \begin{equation}
 L=	\sum_{i = 1}^N L^i
 \end{equation}
+مثال:
+
+أ)-احسب المبدلات:	$ [\hat{X} ,\hat{L_{y}} ],[\hat{X}, \hat{L_{x}} ]$ و$[\hat{X}, \hat{L_{z}} ]$ .
+
+ب)-احسب المبدلات:  $ [\hat{P_{x}}  ,\hat{L_{y}} ] 
+,[\hat{P_{x}} , \hat{L_{x}} ] $ 
+و$[\hat{P_{x}} , \hat{L_{z}} ]$ .
+
+ج)-استعمل نتائج السؤالين (أ) و (ب) لحساب:
+ $[\hat{X},\hat{L^{2}}]$و
+ $[\hat{P_{x}},\hat{L^{2}}]$.
+
+
+الحل:
+
+أ)- المبدل الوحيد الذي يختلف عن الصفر ويتضمن $\hat{X}$ ، $\hat{L_{x}}$ ، $\hat{L_{y}}$ ، $\hat{L_{z}}$   هو 
+$[\hat{X},\hat{P_{x}} ]=i\hbar$.من خلال هذه المعطيات يمكننا ايجاد المبدلات المطلوبة بسهولة.
+
+-أولا، لدينا 
+$	\hat{L_{x}}  =   \hat{Y}\hat{P_{z}} - \hat{Z}\hat{P_{y}}$
+ لا تتضمن  $\hat{P_{x}}$  ، المؤثر $\hat{X}$ يتبادل مع كل من $\hat{Y}$ ، $\hat{P_{z}}$ ، $\hat{Z}$  و  $\hat{P_{y}}$ 
+
+$$
+\left[\hat{X}, \hat{L}_x\right]=\left[\hat{X}, \hat{Y} \hat{P}_z-\hat{Z} \hat{P}_y\right]=0 .
+$$
+
+ -إيجاد المبدلين  $\hat{X}, \hat{L_{y}} ]$ و$[\hat{X}, \hat{L_{z}} ]$:
+$$
+\begin{aligned}
+	& {\left[\hat{X}, \hat{L}_y\right]=\left[\hat{X}, \hat{Z} \hat{P}_x-\hat{X} \hat{P}_z\right]=\left[\hat{X}, \hat{Z} \hat{P}_x\right]=\hat{Z}\left[\hat{X}, \hat{P}_x\right]=i \hbar \hat{Z},} \\
+	& {\left[\hat{X}, \hat{L}_z\right]=\left[\hat{X}, \hat{X} \hat{P}_y-\hat{Y} \hat{P}_x\right]=-\left[\hat{X}, \hat{Y} \hat{P}_x\right]=-\hat{Y}\left[\hat{X}, \hat{P}_x\right]=-i \hbar \hat{Y} .}
+\end{aligned}
+$$
+ب)-المبدل الوحيد بين $\hat{P}_x$ ومكونات  $\hat{L}_x, \hat{L}_y, \hat{L}_z$ الذي يبقى ساريا هو  $\left[\hat{P}_x, \hat{X}\right]=-i \hbar$.  وبالتالي يمكننا استنتاج:
+$$
+\begin{aligned}
+	& {\left[\hat{P}_x, \hat{L}_x\right]=\left[\hat{P}_x, \hat{Y} \hat{P}_z-\hat{Z} \hat{P}_y\right]=0,} \\
+	& {\left[\hat{P}_x, \hat{L}_y\right]=\left[\hat{P}_x, \hat{Z} \hat{P}_x-\hat{X} \hat{P}_z\right]=-\left[\hat{P}_x, \hat{X} \hat{P}_z\right]=-\left[\hat{P}_x, \hat{X}\right] \hat{P}_z=i \hbar \hat{P}_z,} \\
+	& {\left[\hat{P}_x, \hat{L}_z\right]=\left[\hat{P}_x, \hat{X} \hat{P}_y-\hat{Y} \hat{P}_x\right]=\left[\hat{P}_x, \hat{X} \hat{P}_y\right]=\left[\hat{P}_x, \hat{X}\right] \hat{P}_y=-i \hbar \hat{P}_y .}
+\end{aligned}
+$$
+ج)- بالاعتماد على (أ) و (ب) نجد:
+$$
+\begin{aligned}
+	{\left[\hat{X}, \hat{L}^2\right] } & =\left[\hat{X}, \hat{L}_x^2\right]+\left[\hat{X}, \hat{L}_y^2\right]+\left[\hat{X}, \hat{L}_z^2\right] \\
+	& =0+\hat{L}_y\left[\hat{X}, \hat{L}_y\right]+\left[\hat{X}, \hat{L}_y\right] \hat{L}_y+\hat{L}_z\left[\hat{X}, \hat{L}_z\right]+\left[\hat{X}, \hat{L}_z\right] \hat{L}_z \\
+	& =i h\left(\hat{L}_y \hat{Z}+\hat{Z} \hat{L}_y-\hat{L}_z \hat{Y}-\hat{Y} \hat{L}_y\right), \\
+	{\left[\hat{P}_x, \hat{L}^2\right] } & =\left[\hat{P}_x, \hat{L}_x^2\right]+\left[\hat{P}_x, \hat{L}_y^2\right]+\left[\hat{P}_x, \hat{L}_z^2\right] \\
+	& =0+\hat{L}_y\left[\hat{P}_x, \hat{L}_y\right]+\left[\hat{P}_x, \hat{L}_y\right] \hat{L}_y+\hat{L}_z\left[\hat{P}_x, \hat{L}_z\right]+\left[\hat{P}_x, \hat{L}_z\right] \hat{L}_z \\
+	& =i h\left(\hat{L}_y \hat{P}_z+\hat{P}_z \hat{L}_y-\hat{L}_z \hat{P}_y-\hat{P}_y \hat{L}_y\right) .
+\end{aligned}
+$$
+\section{الزخم الزاوي العام}
+يرمز له بالحرف "J" ويتم تعريفه من خلال مكوناته الثلاث
+${J}_x$، ${J}_y$، ${J}_z$
+والتي تحقق علاقات التبديل التالية:
+\begin{equation}
+	\begin{aligned}
+		[\hat{J_{x}}, \hat{J_{y}}] & =  i\hbar \hat{J_{z}}  \\
+		[\hat{J_{y}}, \hat{J_{z}}] & =  i\hbar \hat{J_{x}} \\
+		[\hat{J_{z}}, \hat{J_{x}}] & =  i\hbar \hat{J_{y}} 
+	\end{aligned}
+\end{equation}
+
+	
+	ونظرًا لأن ${J}_x$، ${J}_y$، ${J}_z$ غير متبادلة فيما بينها، فلا يمكن أن تكون مصفوقاتهم قطرية في آن واحد، أي أنهم لا يمتلكون حالات ذاتية مشتركة.  
+\subsection*{مربع الزخم الزاوي:}
+
+
+\begin{equation}
+\hat{J^{2}} = \hat{J_{x}^{2}} ~+ ~\hat{J_{y}^{2}} ~+~ \hat{J_{z}^{2}}
+\end{equation}
+
+	هو مؤثر عددي يتبادل مع
+	   ${J}_x$، ${J}_y$ و ${J}_z$ ونكتب
+\begin{equation}	
+	    [\hat{J}^{2}, \hat{J_{k}} ]=0
+	\end{equation}
+
+
+	حيث يشير k إلى  x ، y وz. على سبيل المثال، في الحالة k=x لدينا:
+	======= (198)
+لأن:
+ \begin{equation}
+ 		\begin{aligned}
+ 	    [\hat{J_{x}}^{2}, \hat{J_{x}} ]=0\\
+    	[\hat{J_{y}}, \hat{J_{x}}]  =  -i\hbar \hat{J_{z}} \\
+        [\hat{J_{z}}, \hat{J_{x}}]  =  i\hbar \hat{J_{y}} 	\end{aligned}
+\end{equation}
+\section*{ملاحظة}
+
+	المؤثرات  $\hat{J_{x}}$ ، $\hat{J_{y}}$ ، $\hat{J_{z}}$ و
+	$\hat{J^{2}}$ كلها هرميتية؛ قيمها الذاتية حقيقية. 
+\subsection*{الحالات والقيم الذاتية لمشغل الزخم الزاوي:}
+نظرا لأن $\hat{J}^{2}$ يتبادل مع   $\hat{J_{x}}$ ، $\hat{J_{y}}$ و $\hat{J_{z}}$ 
+فيمكن تحديد قطري مصفوفة كل مكون من مكونات $\hat{J}$ بشكل منفصل وبالتالي نقول أنها تمتلك حالات ذاتية متزامنة مع $\hat{J^{2}}$.  ولكن بما أن المكونات  $\hat{J_{x}}$ ، $\hat{J_{y}}$ و $\hat{J_{z}}$ 
+لا تتبادل فيما بينها، يمكننا اختيار واحد فقط ليكون قطريًا في نفس الوقت مع $\hat{J^{2}}$. نختار مثلا$\hat{J_{z}}$ 
+ في وسعنا كذلك أخذ $\hat{J}^{2}$ و $\hat{J_{x}}$ أو $\hat{J}^{2}$  و $\hat{J_{y}}$.
+ 
+ 
+نبحث الآن عن الحالات الذاتية المشتركة لـ $\hat{J^{2}}$و$\hat{J_{z}}$والقيم الذاتية المقابلة لها.
+
+ للدلالة على الحالات الذاتية المشتركة نستعمل 
+$|\alpha, \beta\rangle  $
+والقيم الذاتية لـ $\hat{J^{2}}$و$\hat{J_{z}}$ بواسطة  $\hbar^2 \alpha $و$\hbar \beta$، على التوالي، لدينا:
+\begin{equation}
+\begin{aligned}
+	& \hat{J}^2|\alpha, \beta\rangle=\hbar^2 \alpha|\alpha, \beta\rangle \\
+	& \hat{J}_{z}|\alpha, \beta\rangle=\hbar \beta|\alpha, \beta\rangle
+\end{aligned}
+\end{equation}
+تم تقديم العامل h بحيث يكون $\alpha$و$\beta$بلا أبعاد؛ تذكر أن الزخم الزاوي له أبعاد h وأن الأبعاد الفيزيائية لـ h هي: [h]= الطاقة × الزمن. من أجل التبسيط، سنفترض أن هذه الحالات الذاتية متعامدة:
+\begin{equation}
+ \left\langle\alpha^{\prime}, \beta^{\prime} \mid \alpha, \beta\right\rangle=\delta_{\alpha^{\prime}, \alpha} \delta_{\beta^{\prime}, \beta}  \\
+\end{equation}
+نحتاج الآن إلى تعريف مؤثري الرفع والخفض $ \hat{J_{+}} $و $\hat{J_{-}}$ تمامًا كما قمنا في المذبذب التوافقي.
+
+\begin{equation}
+	 \hat{J}_{ \pm}=\hat{J}_x \pm i \hat{J}_y \\
+\end{equation}
+هذا يؤدي إلى:
+
+\begin{equation}
+	 \hat{J}_x=\frac{1}{2}(\hat{J}_{+}+\hat{J}_{-}), \quad \hat{J}_y=\frac{1}{2 i}(\hat{J}_{+}-\hat{J}_{-}) ; \\
+\end{equation}
+ومنه:
+\begin{equation}
+ \hat{J}_x^2=\frac{1}{4}(\hat{J}_{+}^2+\hat{J}_{+} \hat{J}_{-}+\hat{J}_{-} \hat{J}_{+}+\hat{J}_{-}^2), \quad \hat{J}_y^2=-\frac{1}{4}(\hat{J}_{+}^2-\hat{J}_{+} \hat{J}_{-}-\hat{J}_{-} \hat{J}_{+}+\hat{J}_{-}^2) . \\
+\end{equation}
+باستخدام العبارات (16.3) يمكننا بسهولة الحصول على علاقات التبادل التالية:
+\begin{equation}
+	 {[\hat{\vec{J}}^2, \hat{J}_{ \pm}]=0, \quad[\hat{J}_{+}, \hat{J}_{-}]=2 \hbar \hat{J}_z, \quad[\hat{J}_z, \hat{J}_{ \pm}]= \pm \hbar \hat{J}_{ \pm} } \\
+\end{equation}
+بإضافة $\hat{J}_{+}$ و$ \hat{J}_{-}$ينتج:
+\begin{equation}
+	\begin{aligned}
+		 \hat{J}_{+} \hat{J}_{-}=\hat{J}_x^2+\hat{J}_y^2+\hbar \hat{J}_z=\hat{\vec{J}}^2-\hat{J}_z^2+\hbar \hat{J}_z\\
+		 \hat{J}_{-} \hat{J}_{+}=\hat{J}_x^2+\hat{J}_y^2-\hbar \hat{J}_z=\hat{J}^2-\hat{J}_z^2-\hbar \hat{J}_z \\
+	\end{aligned}
+\end{equation}
+تؤدي هذه العلاقات إلى:
+\begin{equation}
+	 \hat{J}^2=\hat{J}_{ \pm} \hat{J}_{\mp}+\hat{J}_z^2 \mp \hbar \hat{J}_z \\
+\end{equation}
+والتي بدورها تسفر عن :
+\begin{equation}
+	\hat{J}^2=\frac{1}{2}(\hat{J}_{+} \hat{J}_{-}+\hat{J}_{-} \hat{J}_{+})+\hat{J}_z^2  \\
+\end{equation}
+\section{العزم الحركي الغزلي(السبين)}
+\subsection{تجربة ستيرن-جيلارخ}
+تم تأكيد وجود اللف المغزلي تجريبيًا بواسطة ستيرن وجيرلاخ في عام 1922 باستخدام ذرات الفضة (Ag). حيث تحتوي الفضة على 47 إلكترونًا؛ 46 منها تشكل توزيعًا متماثلًا كرويًا للشحنة ويحتل الإلكترون السابع والأربعون مدار 5s. إذا كانت ذرة الفضة في حالتها الأرضية، فسيكون إجمالي الزخم الزاوي المداري صفرًا: L=0 (نظرًا لأن إلكترون الغلاف الخامس سيكون في حالة 5s). في تجربة ستيرن-جيرلاخ، تمر حزمة من ذرات الفضة عبر المجال المغناطيسي غير المتجانس (غير المنتظم). إذا كان المجال، على طول الاتجاه z، فإننا نتوقع بشكل كلاسيكي أن نرى على الشاشة نطاقًا مستمرًا متماثلًا حول الاتجاه غير المنحرف، z=0. ومع ذلك، وفقًا للنظرية الموجية لشرودنغر، إذا كان للذرات زخم زاوي مداري L، فإننا نتوقع أن تنقسم الحزمة إلى عدد فردي (منفصل) من مكونات 2L+1. لنفترض أن ذرات الشعاع كانت في حالتها الأرضية L=0، سيكون هناك نقطة واحدة فقط على الشاشة، وإذا كان إلكترون الغلاف الخامس في حالة 5p (L=1)، فإننا نتوقع رؤية ثلاث نقاط. ومع ذلك، من الناحية التجريبية، لا يتصرف الشعاع وفقًا لتنبؤات الفيزياء الكلاسيكية ولا حتى وفقا لنظرية موجة شرودنغر. وبدلاً من ذلك، ينقسم إلى مكونين متميزين كما 
+هو موضح في الشكل 5.3أ. وقد لوحظت هذه النتيجة أيضًا بالنسبة لذرات الهيدروجين في حالتها الأرضية (L=0)، لحل هذا اللغز، افترض جودسميت وأولينبيك في عام 1925 أنه بالإضافة إلى الزخم الزاوي المداري، يمتلك الإلكترون زخمًا زاويًا جوهريًا، والذي، على عكس الزخم الزاوي المداري، لا علاقة له بدرجات الحرية المكانية. قياسًا على حركة الأرض، التي تتكون من حركة مدارية حول الشمس وحركة دورانية أو دورانية داخلية حول محورها، يمكن أيضًا اعتبار الإلكترون، أو أي جسيم مجهري آخر، يتمتع بنوع من الغزل الداخلي أو الجوهري للحركة. أُعطيت هذه الدرجة الجوهرية من الحرية الاسم الموجي للزخم الزاوي المغزلي. ومع ذلك، يجب على المرء أن يضع في اعتباره أن الإلكترون يظل حتى الآن جسيمًانقطيًا عديم البنية  عند محاولة ربط دوران الإلكترون بحركة دوران داخلية. لا يعتمد الزخم الزاوي المغزلي للجسيم على درجات حريته المكانية. إن الدوران، وهو درجة جوهرية من الحرية، هو مفهوم ميكانيكي كمي بحت بدون أي نظير كلاسيكي على عكس الزخم الزاوي المداري.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth, height=0.23\textheight]{"Fig/Fig_III/Ag atome"}
+	\caption{}
+	\label{fig:ag-atome}
+\end{figure}
+
+
+     من النظرية الكلاسيكية للكهرومغناطيسية، يتم إنشاء عزم ثنائي القطب المغناطيسي المداري مع الحركة المدارية لجسيم مشحون بـ :
+\begin{equation}
+\vec{\mu}L=\frac{q}{2mc}\vec{L}
+\end{equation}
+حيث L هو الزخم الزاوي المداري للجسيم، وm هي كتلته، وc هي سرعة الضوء. كما هو مبين في الشكل 5.4أ، إذا كانت الشحنة q موجبة، فسيكون $\vec{\mu}L$ و $\vec{L}$ في نفس الاتجاه؛ أما بالنسبة لشحنة سالبة مثل الإلكترون (q=-e) فإن عزم ثنائي القطب المغناطيسي والزخم الزاوي المداري سيكونان في اتجاهين متعاكسين:
+\begin{equation}
+	\vec{\mu}L=\frac{-e}{2mc}\vec{L}
+\end{equation}
+
+ وبالمثل، إذا اتبعنا التحليل الكلاسيكي وصورنا الإلكترون كشحنة كروية تدور، فسنحصل على عزم ثنائي قطب مغناطيسي جوهري أو مغزلي
+ \begin{equation*}
+ 	\vec{\mu}S=\frac{-e}{2mc}\vec{S}
+   \end{equation*}
+   
+   هذا الاشتقاق الكلاسيكي لـ $	\vec{\mu}S$ خاطئ تمامًا، حيث لا يمكن النظر إلى الإلكترون على أنه كرة دوارة؛ في الواقع، اتضح أن العزم المغناطيسي للإلكترون يساوي ضعف تعبيره الكلاسيكي.
+ \begin{figure}[h]
+ 	\centering
+ 	\includegraphics[width=0.7\linewidth]{"Fig/Fig_III/العزم المغناطيسي"}
+ 	\caption{}
+ 	\label{fig:-}
+ \end{figure}
+ 
+
+
+   على الرغم من أنه لا يمكن اشتقاق العزم المغناطيسي المغزلي بشكل كلاسيكي، كما فعلنا مع العزم المغناطيسي المداري، إلا أنه لا يزال من الممكن افتراضه عن طريق القياس مع (30.3)
+ \begin{equation}
+	\vec{\mu}S={-g}_{s}\frac{e}{2mc}\vec{S}
+\end{equation}
+حيث يسمى  ${g}_{s}$ عامل Landé أو النسبة الجيرومغناطيسية للإلكترون؛ قيمته التجريبية هي   (${g}_{s}=2$) يمكن حساب هذا العامل باستخدام نظرية ديراك النسبية للإلكترون. عندما يتم وضع الإلكترون في المجال المغناطيسي$\vec{B}$، وإذا كان المجال غير متجانس، سيتم تطبيق قوة على عزم ثنائي القطب الجوهري للإلكترون؛ يعتمد اتجاه وحجم القوة على الاتجاه النسبي للمجال وثنائي القطب. تميل هذه القوة إلى محاذاة $	\vec{\mu}S$ على طول $\vec{B}$، مما ينتج عنه حركة مسبقة لـ $	\vec{\mu}S$ حول $\vec{B}$( الشكل3.2  (a) ). على سبيل المثال، إذا كان $	\vec{\mu}S$ موازيًا لـ $\vec{B}$، فإن الإلكترون سيتحرك في الاتجاه الذي يزداد فيه المجال؛ وعلى العكس من ذلك، إذا كان $	\vec{\mu}S$ غير موازي لـ  $\vec{B}$، فإن الإلكترون سيتحرك في الاتجاه الذي يتناقص فيه المجال. بالنسبة للذرات الشبيهة بالهيدروجين (مثل الفضة) الموجودة في الحالة الأرضية، فإن الزخم الزاوي المداري سيكون صفرًا؛ وبالتالي فإن عزم ثنائي القطب للذرة سيكون بالكامل بسبب دوران الإلكترون.
+ومن ثم فإن الحزمة الذرية سوف تنحرف وفقًا لاتجاه دوران الإلكترون. وبما أن الحزمة تنقسم تجريبيًا إلى مكونين، فإن دوران الإلكترون يجب أن يكون له اتجاهان محتملان فقط بالنسبة للمجال المغناطيسي، إما متوازيين أو غير متوازيين.
+قياسًا على الزخم الزاوي المداري لجسيم ما، والذي يتميز برقمين كميين — الرقم المداري l والرقم السمتي ${m}_{l}$ مع
+${m}_{l}=-l, l+1,..., l-1, l $
+ يتميز الزخم الزاوي المغزلي أيضًا برقمين كميين، هما الغزل s وإسقاطها ${m}_{s}$ 
+  ${m}_{s}$ على المحور z (اتجاه المجال المغناطيسي)، حيث:
+  ${m}_{s}=-s, -s+1,..., s-1, s $ 
+   وبما أنه تمت ملاحظة مكونين فقط في تجربة ستيرن-جيرلاخ، فيجب أن يكون لدينا 2s+1=2. يجب بعد ذلك إعطاء أرقام الكم للإلكترون بواسطة $s=\frac{1}{2}$ و $ {m}_{s}=\pm{\frac{1}{2}}$
+اتضح أن كل جسيم أساسي له دوران محدد في الطبيعة. تحتوي بعض الجسيمات على عدد مغزلي صحيح...,s=0,1,2 (ميزونات باي لها مغزلية s=0، والفوتونات لها مغزلية s=1، وهكذا) والبعض الآخر لها عدد مغزلي نصف فردي
+$s=\frac{1}{2},\frac{3}{2},\frac{5}{2},...$
+(الإلكترونات والبروتونات والنيوترونات لها دوران $ s=\frac{1}{2}$ والدلتا لها دوران$ s=\frac{3}{2}$ ،
+ وهكذا). سنرى لاحقا أن الجسيمات التي لها عدد مغزلي نصف عدد صحيح تسمى فرميونات (كواركات، إلكترونات، بروتونات، نيوترونات، إلخ.) وتلك التي لها عدد مغزلي صحيح تسمى بوزونات (بيونات، فوتونات، جرافيتونات، إلخ).
+إلى جانب تأكيد وجود السبين وقياسه، تقدم تجربة ستيرن-جيرلاخ عددًا من الاستخدامات المهمة الأخرى لميكانيكا الكم. كا إعداد الحالة الكمومية. لنفترض أننا نريد إعداد حزمة من الذرات المغزلية؛ فنحن ببساطة نمرر شعاعًا غير مستقطب عبر مغناطيس غير متجانس، ثم نجمع المكون المطلوب ونتجاهل الآخر. يمكن أيضًا استخدام تجربة ستيرن-جيرلاخ لتحديد الزخم الزاوي الإجمالي للذرة، والذي، في الحالة التي يكون فيها 
+$l\neq0 $، يُعطى من خلال مجموع العزم الزاوي المداري والدوراني: $\vec{J}=\vec{L}+\vec{S}$
+
+\subsection{النظرية العامة للزخم المغزلي:}
+نظرية الغزل مطابقة للنظرية العامة للزخم الزاوي المداري. قياسًا على الزخم الزاوي المداري المتجه L، يتم تمثيل الغزل أيضًا بواسطة عامل متجه $\vec{S}$ الذي تخضع مكوناته
+ $\hat{S_{x}}$،$\hat{S_{y}}$ و$\hat{S_{z}}$  
+ لنفس علاقات التبديل مثل 
+$\hat{L_{x}}$ ، $\hat{L_{y}}$ و $\hat{L_{z}}$ 
+
+\begin{equation}
+	 {[\hat{S}_x, \hat{S}_y]=i \hbar \hat{S}_z, \quad[\hat{S}_y, \hat{S}_z]=i \hbar \hat{S}_x, \quad[\hat{S}_z, \hat{S}_x]=i \hbar \hat{S}_y } \\
+\end{equation}
+إضافة إلى أن 
+$\hat{S}^2$ و $\hat{S}_z $
+متبادلة فيما بينها، وبالتالي فإنها تمتلك أشعة ذاتية مشتركة:
+\begin{equation}
+	\hat{S}^2|s, m_s\rangle=\hbar^2 s(s+1)|s, m_s\rangle, \quad \hat{S}_z|s, m_s\rangle=\hbar m_s|s, m_s\rangle
+\end{equation}
+حيث 
+  ${m}_{s}=-s, -s+1,..., s-1, s $ 
+  وبالمثل لدينا:
+\begin{equation}
+	\hat{S}_{ \pm}|s, m_s\rangle=\hbar \sqrt{s(s+1)-m_s(m_s \pm 1)} \mid s, m_s \pm 1\rangle\\
+\end{equation}
+حيث $\hat{S}_{ \pm}=\hat{S}_x \pm i \hat{S}_y$ و:
+\begin{equation}
+	\left\langle\hat{S}_x^2\right\rangle=\left\langle\hat{S}_y^2\right\rangle=\frac{1}{2}\left(\left\langle\hat{S}^2\right\rangle-\left\langle\hat{S}_z^2\right\rangle\right)=\frac{\hbar^2}{2}\left[s(s+1)-m_s^2\right]
+\end{equation}
+حيث $\langle\hat{A}\rangle$ تشير إلى 	
+$\langle\hat{A}\rangle= \langle s, m_s|\hat{A} |s, m_s\rangle$ 
+
+
+تشكل حالات الدوران المغزلي أساسا متعامدا وكاملا
+\begin{equation}
+	\left\langle s^{\prime}, m_s^{\prime} \mid s, m_s\right\rangle=\delta_{s^{\prime}, s} \delta_{m_s^{\prime}, m_s} , \\\quad
+	\sum_{m_s = -s}^s \mid s, m_s\rangle\langle s, m_s \mid=I
+\end{equation}
+حيث I هي مصفوفة الوحدة
+
+\subsection{العزم المغزلي ومصفوفات باولي:}
+بالنسبة لجسيم ذو غزل $\frac{1}{2}$يأخذ الرقم الكمي ${m}_{s}$  قيمتين فقط:  $ {m}_{s}=\pm{\frac{1}{2}}$. وبالتالي يمكن العثور على الجسيم في أي من الحالتين التاليتين:
+\begin{equation}
+\mid s, m_s\rangle=|\frac{1}{2}, \frac{1}{2}\rangle,\quad
+\mid s, m_s\rangle=|\frac{1}{2}, \frac{-1}{2}\rangle
+\end{equation}
+يتم إعطاء القيم الذاتية لـ $\hat{S}^2$ و $\hat{S}_z $ بواسطة:
+\begin{equation}
+	\hat{s}^2\left|\frac{1}{2}, \pm \frac{1}{2}\right\rangle=\frac{3}{4} \hbar^2\left|\frac{1}{2}, \pm \frac{1}{2}\right\rangle, \quad \hat{S}_z\left|\frac{1}{2}, \pm \frac{1}{2}\right\rangle= \pm \frac{\hbar}{2}\left|\frac{1}{2}, \pm \frac{1}{2}\right\rangle
+\end{equation}
+يمكن تمثيل الدوران بيانيًا، كما هو موضح في الشكل (3.2(b)) بواسطة متجه الطول
+ $\mid S\mid=\frac{\sqrt{3} \hbar}{2}$ 
+ الذي تقع نقطة نهايته على دائرة نصف قطرها $\frac{\sqrt{3} \hbar}{2}$وتدور على طول سطح مخروط بنصف -زاوية.
+\begin{equation}
+	\theta=\cos ^{-1}\left(\frac{\left|m_s\right|}{\sqrt{s(s+1)}}\right)=\cos ^{-1}\left(\frac{\hbar / 2}{\sqrt{3} \hbar / 2}\right)=\cos ^{-1}\left(\frac{1}{\sqrt{3}}\right)=54.73^{\circ} 
+\end{equation}
+يقتصر إسقاط S على المحور z على قيمتين فقط: $\frac{\pm \hbar}{2}$ المقابلة للغزل للأعلى و للأسفل.
+
+
+ندرس تمثيل المصفوفة للدوران $s=\frac{1}{2}$. باستخدام (5.67) و(5.68) يمكننا تمثيل المؤثرين $\hat{S}^2$ و $\hat{S}_z $ ضمن الأساس  $\langle s, m_s \mid$  من خلال المصفوفات التالية:
+\begin{equation}
+\hat{s}^2=	\left(\begin{array}{ll}
+		\left\langle\frac{1}{2}, \frac{1}{2} \left|\hat{s}^2\right|\frac{1}{2},\frac{1}{2}\right\rangle & \left\langle\frac{1}{2}, \frac{1}{2} \left|\hat{s}^2\right|\frac{1}{2},-\frac{1}{2}\right\rangle \\
+		\left\langle\frac{1}{2}, -\frac{1}{2} \left|\hat{s}^2\right|\frac{1}{2},\frac{1}{2}\right\rangle	 & \left\langle\frac{1}{2}, -\frac{1}{2} \left|\hat{s}^2\right|\frac{1}{2},-\frac{1}{2}\right\rangle
+	\end{array}\right)	
+\end{equation}
+
+\begin{equation}
+\hat{S}_z    =  \frac{ \hbar}{2}\left(\begin{array}{ll}
+		1 & 0 \\
+		0 & -1
+	\end{array}\right)
+\end{equation}
+مصفوفة $\hat{S_{+}}$  و  $\hat{S_{-}}$  يمكن استنتاجها من .................
+
+\begin{equation}
+\hat{S_{+}}	=\hbar\left(\begin{array}{ll}
+		0 & 1 \\
+		0 & 0
+	\end{array}\right),\quad
+	\hat{S_{-}}	=\hbar\left(\begin{array}{ll}
+		0 & 0 \\
+		1 & 0
+	\end{array}\right)
+\end{equation}
+
+ولأن 
+$\hat{S_{x}}=\frac{1}{2}(\hat{S_{+}}+\hat{S_{-}})$
+و 
+$\hat{S_{y}}=\frac{1}{2}(\hat{S_{-}}-\hat{S_{+}})$
+لدينا:
+\begin{equation}
+	\hat{S_{x}}  =  \frac{ \hbar}{2}\left(\begin{array}{ll}
+		0 & 1 \\
+		1 & 0
+	\end{array}\right),\quad
+		\hat{S_{y}}  =  \frac{ \hbar}{2}\left(\begin{array}{ll}
+		0 & -i \\
+		i & 0
+	\end{array}\right)
+\end{equation}
+
+يتم التعبير عن المتجهات الذاتية المشتركة ل  
+$\vec{S^{2}}$
+و $\vec{S_{z}} $
+ من خلال مصفوفات عمود ثنائية العنصر تعرف باسم المغزليات:
+================ (428)
+
+
+
+
+
+ومن السهل التحقق أن هذه المتجهات تشكل أساسا مكتملا:
+
+\begin{equation}
+	\sum_{m_s=-\frac{1}{2}}^{\frac{1}{2}}\left|\frac{1}{2}, m_s\right\rangle\left\langle\frac{1}{2}, m_s\right|=\left(\begin{array}{l}
+		0 \\
+		1
+	\end{array}\right)\left(\begin{array}{ll}
+		0 & 1
+	\end{array}\right)+\left(\begin{array}{l}
+		1 \\
+		0
+	\end{array}\right)\left(\begin{array}{ll}
+		1 & 0
+	\end{array}\right)=\left(\begin{array}{ll}
+		1 & 0 \\
+		0 & 1
+	\end{array}\right) 
+\end{equation}
+
+ومتعامد:
+\begin{equation}
+	\begin{aligned}
+	\left\langle\frac{1}{2}, \frac{1}{2} \mid \frac{1}{2}, \frac{1}{2}\right\rangle  =\left(\begin{array}{ll}
+		1 & 0
+	\end{array}\right)\left(\begin{array}{l}
+		1 \\
+		0
+	\end{array}\right)=1 . \\
+	\left\langle\frac{1}{2},-\frac{1}{2} \mid \frac{1}{2},-\frac{1}{2}\right\rangle  =\left(
+	\begin{array}{ll}
+		0 & 1
+	\end{array}
+	\right)\left(\begin{array}{l}
+		0 \\
+		1
+	\end{array}\right)=1 . \\
+	\left\langle\frac{1}{2}, \frac{1}{2} \mid \frac{1}{2},-\frac{1}{2}\right\rangle  =\left\langle\frac{1}{2},-\frac{1}{2} \mid \frac{1}{2}, \frac{1}{2}\right\rangle=0 .	\end{aligned}
+\end{equation}
+دعونا الآن نجد المتجهات الذاتية لـ
+ $\hat{S_{x}}$  و 
+$\hat{S_{y}}$ 
+. أولاً، لاحظ أن المتجهات الأساسية$|s, m_s > $ هي متجهات ذاتية لا  $\hat{S_{x}}$  و 
+$\hat{S_{y}}$ 
+؛ ومع ذلك، يمكن التعبير عن ناقلاتها الذاتية بدلالة  $|s, m_s > $ على النحو التالي  
+
+:....
+..............................................................
+..............................................................
+\begin{equation}
+	\begin{aligned}
+		& \left|\psi_x\right\rangle_{ \pm}=\frac{1}{\sqrt{2}}\left[\left|\frac{1}{2}, \frac{1}{2}\right\rangle \pm\left|\frac{1}{2},-\frac{1}{2}\right\rangle\right] \\
+		& \left|\psi_y\right\rangle_{ \pm}=\frac{1}{\sqrt{2}}\left[\left|\frac{1}{2}, \frac{1}{2}\right\rangle \pm i\left|\frac{1}{2},-\frac{1}{2}\right\rangle\right] 
+	\end{aligned}
+\end{equation}
+
+وبالتالي يتم إعطاء معادلات القيم الذاتية لكل من $\hat{S_{x}}$   و$\hat{S_{y}}$  ب:
+
+\begin{equation}
+ \hat{S}_x\left|\psi_x\right\rangle_{ \pm}= \pm \frac{\hbar}{2}\left|\psi_x\right\rangle_{ \pm}, \quad \hat{S}_y\left|\psi_y\right\rangle_{ \pm}= \pm \frac{\hbar}{2}\left|\psi_y\right\rangle_{ \pm } 
+ \end{equation}
+
+
+عندما تكون s=1/2 يكون من المناسب تقديم مصفوفات باولي 
+$ \sigma_y , \sigma_x$
+و$ \sigma_z$
+ والتي ترتبط بمتجه الدوران على النحو التالي:
+\begin{equation}
+	eqn
+\end{equation}
+باستعمال هذه العلاقة مع ,,,,,,,,,,,,,,,,, نحصل على:
+\begin{equation}
+	 \sigma_x=\left(\begin{array}{cc}
+		0 & 1 \\
+		1 & 0
+	\end{array}\right), \quad \sigma_y=\left(\begin{array}{cc}
+		0 & -i \\
+		i & 0
+	\end{array}\right), \quad \sigma_z=\left(\begin{array}{cc}
+		1 & 0 \\
+		0 & -1
+	\end{array}\right) 
+\end{equation}
+تحقق هذه المصفوفات الخاصيتين التاليتين:
+\begin{equation}
+	\begin{aligned}
+		& \sigma_j^2=\hat{I} \quad(j=x, y, z) \\
+		& \sigma_j \sigma_k+\sigma_k \sigma_j=0 \quad(j \neq k) \\
+		&
+	\end{aligned}
+\end{equation}
+ بحيث يشير j  و k إلى ،x
+y
+وz
+بينما يشير  $ \hat{I}$ إلى مصفوفة الوحدة(2×2)، والمعادلتان   تكافئان العلاقة المضادة للتبديل :
+\begin{equation}
+	\left\{\sigma_j, \sigma_k\right\}=2 \hat{I} \delta_{j, k} 
+\end{equation}
+يمكننا التحقق من أن مصفوفات باولي تلبي علاقة التبديل:
+\begin{equation}
+	\left[\sigma_j, \sigma_k\right]=2i\epsilon_{j_k}|\delta|..........
+\end{equation}
+\subsection*{ملاحظات:}
+
+بما أن الدوران لا يعتمد على درجات الحرية المكانية، فإن المكونات  $\hat{S_{x}}$  ،$\hat{S_{y}}$ و$\hat{S_{z}}$
+من مشغل الدوران المغزلي تتبادل مع جميع العوامل المكانية، ولا سيما الزخم الزاوي المداري $ \hat{L}$، والموضع والزخم $ \hat{R}$ و  $ \hat{P}$
+\begin{equation}
+	 \left[\hat{S}_j, \hat{L}_k\right]=0, \quad\left[\hat{S}_j, \hat{R}_k\right]=0, \quad\left[\hat{S}_j, \hat{P}_k\right]=0 \quad(j, k=x, y, z)
+\end{equation}
+
+
+ \begin{equation}
+ 	 \left|\psi\right\rangle= \left|\psi\right\rangle\left|s, m_s\right\rangle
+ \end{equation}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+\section{جمع العزوم الزاوية:}
+تتم مواجهة إضافة العزم الزاوي في جميع مجالات الفيزياء الحديثة. إن إتقان تقنياتها أمر ضروري لفهم الظواهر دون الذرية المختلفة. على سبيل المثال، يتكون الزخم الزاوي الإجمالي للإلكترون في ذرة الهيدروجين من عزمين، العزم المداري L، والذي يرجع إلى الحركة المدارية للإلكترون حول البروتون، والعزم المغزلي S، والذي بسبب حركة دوران الإلكترون حول نفسه. لا يمكن مناقشة خصائص ذرة الهيدروجين بشكل صحيح دون معرفة كيفية جمع العزوم المدارية والدورانية للزخم الزاوي الكلي للإلكترون. فيما يلي، سنقدم شكلية حمع العزم الزاوي، ثم سننظر في بعض تطبيقاتها الأكثر أهمية.
+\subsection{جمع عزمين زاويين:}
+نضع في الإعتبار أن العزمين الزاويين
+$\hat{J_1}$ و $\hat{J_2}$
+		ينتميان إلى فضاءات فرعية مختلفة 1 و 2؛ قد تشير $\hat{J_1}$و $\hat{J_2}$ إلى جسيمين مختلفين أو إلى خاصيتين مختلفتين لنفس الجسيم.
+وقد تشير إلى العزم المداري الزاوي و المغزلي لنفس الجسيم. وبافتراض أن اقتران الغزل- المداري ضعيف بما فيه الكفاية، فإن درجات حرية الفضاء والغزل للإلكترون تتطور بشكل مستقل عن بعضها البعض.
+مكونات$\hat{J_1}$ و$\hat{J_2}$تلبي علاقات التبديل المعتادة للزخم الزاوي:
+
+
+\begin{equation}
+		[\hat{J_{1_x}}, \hat{J_{1_y}}] =  i\hbar \hat{J_{1_z}},  \\ \quad
+	[\hat{J_{1_y}}, \hat{J_{1_z}}]  =  i\hbar \hat{J_{1_x}}, \\ \quad
+	[\hat{J_{1_z}}, \hat{J_{1_x}}]  =  i\hbar \hat{J_{1_y}} 
+\end{equation}
+\begin{equation}
+	[\hat{J_{2_x}}, \hat{J_{2_y}}] =  i\hbar \hat{J_{2_z}} , \\ \quad
+	[\hat{J_{2_y}}, \hat{J_{2_z}}]  =  i\hbar \hat{J_{1_x}}, \\ \quad
+	[\hat{J_{2_z}}, \hat{J_{2_x}}]  =  i\hbar \hat{J_{2_y}} 
+\end{equation}
+نظرًا لأن$\hat{J_1}$و$\hat{J_2}$ينتميان إلى فضاءات مختلفة، فإن مكوناتهما تتبادل فيما بينهما:
+\begin{equation}
+		[\hat{J_{1_j}}, \hat{J_{2_k}}] =0,\\ \quad
+		(j, k=x,y,z)
+\end{equation}
+
+نستدل على الحالات الذاتية المشتركة لـ: 
+$\hat{J^{2}_1}$
+و $\hat{J_{1_z}}$  ب  $  \left|j_1, m_1\right\rangle$    
+و  $\hat{J^{2}_2}$
+و $\hat{J_{2_z}}$  ب  $  \left|j_2, m_2\right\rangle$ 
+،ولدينا:
+\begin{equation}
+	\begin{aligned}
+	      &   \hat{J^{2}_1}|j_1, m_1\rangle =j_1(j_1+1)\hbar²|j_1, m_1\rangle\\
+	&\hat{J^{2_z}_1}|j_1, m_1\rangle =m_1\hbar|j_1, m_1\rangle\\
+&	\hat{J^{2}_2}|j_2, m_2\rangle =j_2(j_2+1)\hbar²|j_2, m_2\rangle\\
+&	\hat{J^{2_z}_2}|j_2, m_2\rangle =m_2\hbar|j_2, m_2\rangle
+	\end{aligned}
+\end{equation}
+
+أبعاد الفضاءات التي ينتمي إليها $\hat{J_1}$و$\hat{J_2}$ معطاة بواسطة $2j_1+1 $و$ 2j_2+1$
+على التوالي. يتم تمثيل العوامل
+ $\hat{J^{2}_1}$
+و $\hat{J_{1_z}}$  ضمن الأساس $j_1 $و$m_1 $بواسطة مصفوفات مربعة ذات أبعاد 
+$2j_1+1 × 2j_1+1$
+ بينما يتم تمثيل
+ $\hat{J^{2}_2}$
+و $\hat{J_{2_z}}$   بواسطة مصفوفات مربعة ذات أبعاد
+ $2j_2 +1 × 2j_2+1 $
+ ضمن الأساس 
+$j_2$،$m_2$.  
+نعتبر الآن الجسيمين (أو الفضاءين الفرعيين) 1 و2 معًا. المؤثرات الأربعة $\hat{J^{2}_1}$
+، $\hat{J_{1_z}}$  ، $\hat{J^{2}_2}$
+و $\hat{J_{2_z}}$   تشكل مجموعة كاملة من المؤثرات المتبادلة؛ وبالتالي يمكن تقسيمها بشكل مشترك من قبل نفس الحالة. للدلالة على حالاتهم الذاتية المشتركة بواسطة
+ $j_1$، $ j_2$؛ $m_1$، $m_2، $
+ يمكننا كتابتها كنواتج مباشرة لـ $<j_1,m_1 |$ و$ <j_2, m_2 |$
+\begin{equation}
+	\left|j_1, j_2 ; m_1, m_2\right\rangle=	\left|j_1,m_1\right\rangle	\left| j_2, m_2\right\rangle
+\end{equation}
+لأن إحداثيات $\hat{J_1}$و$\hat{J_2}$مستقلة. يمكننا بالتالي إعادة كتابة (7.94)-(7.97) بالشكل:
+
+
+\begin{equation}
+	\begin{aligned}
+		&   \hat{J^{2}_1}|j_1, j_2 ; m_1, m_2\rangle =j_1(j_1+1)\hbar²|j_1, j_2 ; m_1, m_2\rangle\\
+		&\hat{J^{2_z}_1}|j_1, j_2 ; m_1, m_2\rangle =m_1\hbar|j_1, j_2 ; m_1, m_2\rangle\\
+		&	\hat{J^{2}_2}|j_1, j_2 ; m_1, m_2\rangle =j_2(j_2+1)\hbar²|j_1, j_2 ; m_1, m_2\rangle\\
+		&	\hat{J^{2_z}_2}|j_1, j_2 ; m_1, m_2\rangle =m_2\hbar|j_1, j_2 ; m_1, m_2\rangle
+	\end{aligned}
+\end{equation}
+
+تشكل المجموعات  $|j_1, j_2 ; m_1, m_2\rangle $ أساسًا كاملاً ومتعامدًا :
+
+\begin{equation}
+\sum_{m_1 m_2}\left|j_1, j_2 ; m_1, m_2\right\rangle\langle j_1, j_2 ; m_1, m_2 \mid=\left(\sum_{m_1}\left|j_1, m_1\right\rangle\left\langle j_1, m_1 \right|\right)\left(\sum_{m_2}\left|j_2, m_2\right\rangle\left\langle j_2, m_2\right|\right)
+\end{equation}
+\begin{equation}
+\sum_{m_1=-j_1}^{j_1} \sum_{m_2=-j_2}^{j_2} \mid j_1, j_2 ; m_1, m_2\rangle \langle j_1, j_2 ; m_1, m_2 \mid=1.
+\end{equation} 
+
+\begin{equation}
+	\begin{aligned}
+	\langle j_1^{\prime}, j_2^{\prime} ; m_1^{\prime}, m_2^{\prime}\mid j_1, j_2 ; m_1, m_2 \rangle &=\langle j_1^{\prime}, m_1^{\prime}\mid j_1, m_1 \rangle \langle j_2^{\prime}, m_2^{\prime}\mid j_2, m_2\rangle \\ &= 
+	\delta_{j_1^{\prime}, j_1} \delta_{j_2^{\prime}, j_2} \delta_{m_1^{\prime}, m_1} \delta_{m_2^{\prime}, m_2} \\	\end{aligned}
+\end{equation}
+
+الأساس $|j_1, j_2 ; m_1, m_2 \rangle$يمتد بشكل واضح على المساحة الكلية المكونة من الفضاءين الجزئيين 1 و 2. 
+من (7.98) ..........نرى أن البعد N لهذا الفضاء يساوي حاصل ضرب أبعاد الفضاءين الجزئيين الممتدين في
+$ \mid j_1, m_1 \rangle$
+و $\mid j_2, m_2\rangle  $ :
+\begin{equation}
+	N=\left(2 j_1+1\right) \times\left(2 j_2+1\right) . \\
+\end{equation}
+
+يمكننا الآن تقديم مؤثرات الخطوة  J1= J1x+i J1y و J2= J2x+i J2y ; أفعالهم على <j1 j2;m1m2 |
+تعطى بالعلاقات:..................
+\begin{equation}
+	\hat{J}_{1 \pm} \mid j_1, j_2 ; m_1, m_2\rangle=\hbar \sqrt{\left(j_1 \mp m_1\right)\left(j_1 \pm m_1+1\right)}\mid j_1, j_2 ; m_1 \pm 1, m_2\rangle
+\end{equation}
+\begin{equation}
+	\hat{J}_{2 \pm} \mid j_1, j_2 ; m_1, m_2\rangle=\hbar \sqrt{\left(j_2 \mp m_2\right)\left(j_2 \pm m_2+1\right)}\mid j_1, j_2 ; m_1 , m_2\pm 1\rangle
+\end{equation}
+
+
+
+مشكل جمع عزمين زاويين $\hat{J_1}$و$\hat{J_2}$:
+\begin{equation*}
+	\hat{J}=\hat{J_1}+\hat{J_2}
+\end{equation*}
+يكمن في إيجاد القيم الذاتية والمتجهات الذاتية لـ ;
+$\hat{J^{2}}$ و $\hat{J_{z}}$
+ بدلالة القيم الذاتية والمتجهات الذاتية لـ
+  $\hat{J^{2}_1}$ ، 
+ $\hat{J^{2}_2}$ ،
+ $\hat{J_{z_1}}$
+ و $\hat{J_{z_2}}$
+ 
+بما أن مصفوفتي $\hat{J_1}$و$\hat{J_2}$لها أبعاد مختلفة بشكل عام، فإن الجمع المحدد بالعلاقة (7.109) ليس جمعا للمصفوفات؛ إنه علاقة رمزية. بجمع العلاقات (7.91) و(7.92)، يمكننا بسهولة التأكد من أن مكونات J تلبي علاقات تبديل الزخم الزاوي:
+\begin{equation}
+		[\hat{J_{1_x}}, \hat{J_{1_y}}] =  i\hbar \hat{J_{1_z}},  \\ \quad
+	[\hat{J_{1_y}}, \hat{J_{1_z}}]  =  i\hbar \hat{J_{1_x}}, \\ \quad
+	[\hat{J_{1_z}}, \hat{J_{1_x}}]  =  i\hbar \hat{J_{1_y}} 
+\end{equation}
+نلاحظ أن  
+ $\hat{J^{2}_1}$ ، 
+$\hat{J^{2}_2}$ ،
+$\hat{J_{z_1}}$
+و $\hat{J_{z_2}}$ تتبادل بشكل مشترك; ويمكن معرفة ذلك من العلاقة:
+
+\begin{equation}
+ \hat{J}^2=\hat{J}_1^2+\hat{J}^2_2+2 \hat{J}_{1_z} \hat{J}_{2_z}+J_{1+} J_{2+}+J_{-} J_{2-}, \\
+ \end{equation}
+والتي تقودنا إلى:
+\begin{equation}
+	\left[\hat{J^{2}}, \hat{J^{2}_1}\right]	=\left[\hat{J^{2}}, \hat{J^{2}_2}\right]=0
+\end{equation}
+وإلى:
+\begin{equation}
+\left[\hat{J^{2}}, \hat{J_z}\right] =\left[\hat{J^{2}_1}, \hat{J_z}\right]=\left[\hat{J^{2}_2}, \hat{J_z}\right]=0
+\end{equation}
+وبالرغم أن $	[\hat{J^{2}}, \hat{J_z}]=0 $
+المؤثرات $\hat{J_{z_1}}$
+و $\hat{J_{z_2}}$   لاتتبادل بشكل منفصل مع $\hat{J^{2}}$
+
+\begin{equation}
+	\left[\hat{J}^2, \hat{J}_{1_z}\right] \neq 0, \quad\left[\hat{J}^2, \hat{J}_{2_z}\right] \neq 0 
+\end{equation}
+الآن، بما أن ;$\hat{J^{2}_1}$,$\hat{J^{2}_2}$, $\hat{J^{2}}$,$\hat{J_z}$ تشكل مجموعة من المؤثرات المتبادلة، فيمكن جعلها قطرية في وقت واحد بواسطة نفس الحالات؛ لتعيين هذه الحالات الذاتية المشتركة بواسطة  <j1,j2; j,m|، 
+لدينا:
+\begin{equation}
+	\begin{aligned}
+		&   \hat{J^{2}_1}|j_1, j_2 ; j, m\rangle =j_1(j_1+1)\hbar²|j_1, j_2 ;j, m\rangle\\
+			&	\hat{J^{2}_2}|j_1, j_2 ; j, m\rangle =j_2(j_2+1)\hbar²|j_1, j_2 ;j, m\rangle\\
+				&	\hat{J^{2}}|j_1, j_2 ;j, m\rangle =j(j+1)\hbar²|j_1, j_2 ;j, m\rangle\\
+		&\hat{J_z}|j_1, j_2 ;j, m\rangle =m\hbar|j_1, j_2 ; j, m\rangle\\
+	\end{aligned}
+\end{equation}
+لكل j، يأخذ m القيم (2j+1) المسموح بها: 
+$m=-j, j+1,..., j-1, j $
+بما أن $J_1 $و$J_2$ عادة ما تكون ثابتة، فسوف نستخدم، التدوين < j ,m | لاختصار $ |j_1, j_2 ;j, m\rangle$. مجموعة المتجهات $ j, m\rangle|$ تشكل أساسًا كاملاً ومتعامدًا:
+\begin{equation}
+	\begin{aligned}
+	\sum_j \sum_{m=-j}^j\mid j, m \rangle\langle j, m\mid=1\\\quad
+	\langle j^{\prime}, m^{\prime}\mid j, m \rangle=\delta_{j, j^{\prime}} \delta_{m^{\prime}, m} 	
+	\end{aligned}
+\end{equation}
+
+الفضاء الذي يعمل فيه الزخم الزاوي الكلي J هو الفضاء الممتد على الأساس $ j, m\rangle|$ ؛ يعرف هذا الفضاء بالفضاء الناتج. من المهم أن نعرف أن هذا الفضاء هو نفسه الفضاء الممتد بواسطة $\mid j_1, j_2 ; m_1, m_2\rangle$; أي الفضاء الذي يتضمن الفضاءين الفرعيين 1 و2. وبالتالي فإن بُعد الفضاء الذي يمتد بواسطة الأساس $ j, m\rangle|$ يساوي أيضًا $ 	N=\left(2 j_1+1\right) \times\left(2 j_2+1\right) . \\$كما حددنا سابقا.
+المشكلة الآن هي إيجاد التحويل الذي يربط القواعد $\mid j_1, j_2 ; m_1, m_2\rangle$ و $ j, m\rangle|$ .
+\subsection{التحويل بين القواعد: معاملات كليبش-جوردان}
+دعونا نعود الآن إلى حمع  $J_1 $و$J_2$ . تكمن المشكلة في جوهرها في الحصول على القيم الذاتية لـ  $\hat{J^{2}}$و$\hat{J_z}$والتعبير عن الحالة 
+$| j, m\rangle$ بدلالة $\mid j_1, j_2 ; m_1, m_2\rangle$. يجب أن نتذكر أن$ |j, m\rangle$
+ هي الحالة التي تكون فيها لـ $\hat{J^{2}}$و$\hat{J_z}$قيم ثابتةj(j+1) وm على الترتيب، ولكنها بشكل عام ليست الحالة  التي تكون فيها لـ $\hat{J_{z_1}}$
+و $\hat{J_{z_2}}$  قيم ثابتة؛ أما بالنسبة لــ 
+$\mid j_1, j_2 ; m_1, m_2\rangle$فهي الحالة التي يكون فيها لـ$\hat{J^{2}_1}$ ، 
+$\hat{J^{2}_2}$ ،
+$\hat{J_{z_1}}$
+و $\hat{J_{z_2}}$  قيم ثابتة.
+يمكن ربط القاعدتين 
+$\mid j_1, j_2 ; m_1, m_2\rangle$و 
+$ |j, m\rangle$ بالتحويل على النحو التالي:
+
+\begin{equation}
+	\begin{aligned}
+	 |j, m\rangle &=\left(\sum_{m_1=-j_1}^{j_1} \sum_{m_2=-j_2}^{j_2}\left|j_1, j_2 ; m_1, m_2\right\rangle\left\langle j_1, j_2 ; m_1, m_2\right|\right)|j, m\rangle \\ &
+	 =\sum_{m_1 m_2}\left\langle j_1, j_2 ; m_1, m_2 \mid j, m\right\rangle\left|j_1, j_2 ; m_1, m_2\right\rangle \\
+	 \end{aligned}
+\end{equation}
+حيث استخدمنا شرط التنظيم من العلاقة (7.104)؛ وبما أن القاعدتين $\mid j_1, j_2 ; m_1, m_2\rangle$و 
+$ |j, m\rangle$تخضعان لشرط التنظيم، فإن هذا التحويل يجب أن يكون وحدويًا.المعاملات
+  $\langle j_1, j_2 ; m_1, m_2 \mid j, m\rangle$
+هي عناصر المصفوفة للتحويل الوحدوي الذي يربط القاعدتين $\mid j_1, j_2 ; m_1, m_2\rangle$و 
+$ |j, m\rangle$،
+ والتي تعتمد فقط على الكميات $j_1 $،$j_2 $،$j$ ،$m_1$ ، $m_2 $و$m$. تسمى هذه المعاملات معاملات كليبش-جوردان. إن مشكلة جمع الزخم الزاوي تُختصر إلى إيجاد معاملات كليبش-جوردان. تعتبر هذه المعاملات حقيقية حسب الاصطلاح. وبالتالي:
+ \begin{equation}
+ 	\langle j_1, j_2 ; m_1, m_2 \mid j, m\rangle=\langle j, m\mid j_1, j_2 ; m_1, m_2 \rangle
+ \end{equation}
+
+باستخدام (7.104) و (7.120) يمكننا استنتاج علاقة التنظيم و التعامد لـمعاملات كليبش-جوردان:.. ...,,,,,,,,,,,,,,,,,,,,,.,'''''''''''''''''''''''''''''''''''
+\begin{equation}
+\sum_{m_1 m_2}	\langle j^{\prime}, m^{\prime}\mid j_1, j_2 ; m_1, m_2 \rangle\langle j_1, j_2 ; m_1, m_2 \mid j, m\rangle=\delta_{j^{\prime}, j} \delta_{m^{\prime}, m} \\
+\end{equation}
+
+وبما أن معاملات كليبش-جوردان حقيقية، فيمكن إعادة كتابة هذه العلاقة على النحو التالي:
+\begin{equation}
+	\sum_{m_1 m_2}	\langle j_1, j_2 ; m_1, m_2\mid  j^{\prime}, m^{\prime}\rangle\langle j_1, j_2 ; m_1, m_2 \mid j, m\rangle=\delta_{j^{\prime}, j} \delta_{m^{\prime}, m} \\
+\end{equation}
+التي تقودنا إلى:
+\begin{equation}
+	\sum_{m_1 m_2}\langle j_1, j_2 ; m_1, m_2 \mid j, m\rangle^2=1
+\end{equation}
+وبالمثل،لدينا:
+
+\begin{equation}
+ \sum_j \sum_{m=-j}^j\left\langle j_1, j_2 ; m_1^{\prime}, m_2^{\prime} \mid j, m\right\rangle\left\langle j_1, j_2 ; m_1, m_2 \mid j, m\right\rangle=\delta_{m_1^{\prime}, m_1} \delta_{m_2^{\prime}, m_2} \\ 	
+\end{equation}
+وعلى وجه الخصوص:
+\begin{equation}
+	 \sum_j \sum_{m}\langle j_1, j_2 ; m_1, m_2 \mid j, m\rangle^2=1
+\end{equation}
+
+\subsection{القيم الذاتية لـ $J^2$ و$J_z$  :}
+
+الآن ندرس كيفية العثور على القيم الذاتية لـ  $J^2 $ 
+و$J_z$ بدلالة $J^2_1$,$ J^2_2$,$ J_{1_z}$ و$J_{z_2} $
+ أي الحصول على j وm بدلالة  $j_1$  ،$j_2$ ،$m_1 $ و$m_2 $.  أولا،بما أن  $J_z = J_{1_z} + J_{2_z}،$ لدينا $m = m_1+ m_2 $. الآن، لإيجاد j بدلالة $j_1 $ و $j_2 $، نتصرف على النحو التالي. بما أن القيم القصوى لـ $m_1 $ و$m_2 $ هي   
+  $ m_{1_{\max } }= j_1 $و $m_{2_{\max } }= j_2 $ 
+ فلدينا 
+$m_{\max } = m_{1_{\max }} + m_{2_{\max } }  = j_1+ j_2  $
+؛ ولكن بما أن > |m|//////////////////////////////////// 
+|  ، ثم $j_{\max }= j_1+ j_2$.
+للعثور على القيمة الدنيا $j_{\min }$لـ j، نحتاج إلى استخدام أن هناك إجمالي 
+(2j1+1)(2j2+1) < Eigenstates | j,m .  لكل قيمة j هناك (2j+1) Eigenstates  ، لذلك لدينا:...............................................
+\begin{equation}
+\sum_{j=j_{\min }}^{j_{\max }}(2 j+1)=\left(2 j_1+1\right)
+\end{equation}
+والتي تقودنا إلى:
+\begin{equation}
+ j_{\min }^2=\left(j_1-j_2\right)^2 \quad \Longrightarrow \quad j_{\min }=\left|j_1-j_2\right|
+\end{equation}
+
+ومن ثم فإن القيم المسموح بها لـ j تقع ضمن النطاق:
+
+\begin{equation}
+	\left|j_1-j_2\right| \leq j \leq j_1+j_2 \\
+\end{equation}
+
+ويمكن أيضًا استنتاج هذا التعبير من علاقة المثلث المعروفة. وبالتالي فإن القيم المسموح بها لـ j تستمر في خطوات صحيحة وفقًا لـ :
+\begin{equation}
+	j=| j_1-j_2|,| j_1-j_2 \mid+1, \ldots, j_1+j_2-1, j_1+j_2  \\
+\end{equation}
+\subsection*{ملاحظة:}
+طويلة مجموع متجهين
+ $\vec{A}+\vec{B}$
+ يجب أن تكون محصورة بين مجموع وفرق طويلتيهما
+ |A+B| و|A-B| أي:
+$ |A-B|\leq \vec{A}+\vec{B} \leq|A+B|$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{القيم الخاصة للزخم الزاوي}
 القيم الخاصة  
